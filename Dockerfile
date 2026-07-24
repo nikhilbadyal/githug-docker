@@ -1,4 +1,4 @@
-FROM ruby:4.0.5-alpine
+FROM ruby:4.0.6-alpine
 RUN gem install githug:0.5.1 && apk add git
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 RUN echo y | githug
